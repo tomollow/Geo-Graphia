@@ -1,9 +1,9 @@
 #https://qiita.com/MaTTA_RUNTEQ50B/items/c9545f16bc362237d8a9
 # pip install --no-cache-dir -r requirements.txt
 # streamlit run main.py
-#__import__('pysqlite3')
-#import sys
-#sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
 import streamlit as st
