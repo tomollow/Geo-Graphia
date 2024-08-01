@@ -57,7 +57,7 @@ def main():
         documents = loader.load()
         
         text_splitter = CharacterTextSplitter(
-            chunk_size=500, 
+            chunk_size=select_chunk_size, 
             chunk_overlap=0
             )
         texts = text_splitter.split_documents(documents)
