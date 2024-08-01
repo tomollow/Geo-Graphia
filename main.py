@@ -43,7 +43,7 @@ def main():
     select_temperature = st.sidebar.slider(
         "Temperature", min_value=0.0, max_value=2.0, value=0.0, step=0.1)
     select_chunk_size = st.sidebar.slider(
-        "Chunk Size", min_value=0.0, max_value=1000.0, value=300.0, step=10.0)
+        "Chunk Size", min_value=0.0, max_value=1000.0, value=500.0, step=10.0)
 
     # データの読み込みとベクトル化
     def load_and_embed_data(file_path, file_ext):
